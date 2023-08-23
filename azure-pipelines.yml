@@ -34,9 +34,9 @@ stages:
         - task: AzureRmWebAppDeployment@4
           inputs:
             ConnectionType: 'AzureRM'
-            azureSubscription: '26bacf3c-23bb-460d-99e5-1ca9653579b0'
+            azureSubscription: 'Azure subscription 1'
             appType: 'webApp'
-            WebAppName: 'abookstore'
+            WebAppName: 'abookstore2'
             packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
       - job: Test
         dependsOn: Deploy
